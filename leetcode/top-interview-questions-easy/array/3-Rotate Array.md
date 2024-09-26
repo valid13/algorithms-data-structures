@@ -90,8 +90,6 @@ class Solution {
         nums = reverse(nums, 0, k - 1);
         // 3/ reverse n - k elements left eg: [5,6,7,| 1,2,3,4]
         nums = reverse(nums, k, n - 1);
-
-        System.out.println(Arrays.toString(nums));
     }
 
     private int[] reverse(int[] nums, int start, int end) {

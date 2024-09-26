@@ -1,11 +1,3 @@
-Definition: What problem the algorithm solves.
-Steps: Pseudocode or flowchart to explain the steps.
-Time Complexity: Explain the time complexity (Big O notation).
-Space Complexity: Mention the space complexity.
-Applicable Data Structures: List the data structures on which the algorithm works best.
-Example: Provide code or a problem solved using this algorithm.
-Common Use Cases: Describe when and why to use this algorithm.
-
 # Definition
 
 The Juggling Algorithm is used to rotate an array to the left by a given number of positions. Instead of shifting elements one by one, it divides the array into sets based on the greatest common divisor (GCD) of the array's length and the number of rotations. Each set is rotated individually to achieve the final rotated array.
@@ -81,3 +73,10 @@ O(1), since only a few variables are used.
 
 - Arrays: The algorithm is particularly designed to rotate elements in arrays or lists.
 - Circular Buffers: This technique can also be adapted for circular buffer implementations.
+
+# Common use case
+
+- Array Rotation: Efficiently rotates elements in arrays (e.g., circular buffers).
+- Circular Scheduling: Allocates tasks or resources in a round-robin manner.
+- Data Manipulation: Repositions data with minimal overhead (e.g., in games).
+- Cyclic Permutations: Generates permutations of a set without excessive memory usage.

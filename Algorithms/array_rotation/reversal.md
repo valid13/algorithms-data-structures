@@ -35,8 +35,6 @@ class Solution {
         nums = reverse(nums, 0, k - 1);
         // 3/ reverse n - k elements left eg: [5,6,7,| 1,2,3,4]
         nums = reverse(nums, k, n - 1);
-
-        System.out.println(Arrays.toString(nums));
     }
 
     private int[] reverse(int[] nums, int start, int end) {
@@ -66,3 +64,9 @@ O(1), since the array is modified in place without using any additional space (e
 
 - Arrays: The algorithm is mainly designed for rotating elements in arrays or lists.
 - Strings: Can be adapted for strings (if mutable) to rotate characters in the string.
+
+# Common use case
+
+- Array Rotations: Commonly used when you need to cyclically shift elements in an array or list.
+- Circular Scheduling: Helps in rotating a list of tasks in round-robin fashion or cyclically shifting elements in buffer-like scenarios.
+- Cyclic Permutations: Used in situations where cyclic permutations of elements are required without using extra space.

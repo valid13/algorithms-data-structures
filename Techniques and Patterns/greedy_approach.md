@@ -1,6 +1,6 @@
 # Description
 
-Greedy algorithm is an approach where the solution is constructed step by step, making the locally optimal choice at each step with the hope that these local solutions will lead to a globally optimal solution. Greedy algorithms are typically used for optimization problems where the goal is to find the best solution according to some criteria.
+Greedy is an approach where the solution is constructed step by step, making the locally optimal choice at each step with the hope that these local solutions will lead to a globally optimal solution. Greedy algorithms are typically used for optimization problems where the goal is to find the best solution according to some criteria.
 
 Key Features of Greedy Algorithms:
 

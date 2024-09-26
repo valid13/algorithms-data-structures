@@ -42,3 +42,12 @@ O(n)
 
 - Hash Tables/Hash Maps: The algorithm is directly based on the use of hash tables for storing and retrieving key-value pairs.
 - Sets: Similar logic can be applied when using sets, which internally also use hash tables.
+
+# Common use case
+
+- Duplicate Detection: Quickly checks for duplicate entries (e.g., in user registrations).
+- Counting Frequencies: Counts occurrences of items in datasets (e.g., word frequencies).
+- Lookup Tables: Stores and retrieves key-value pairs efficiently (e.g., user sessions).
+- Anagram Detection: Checks if two strings are anagrams based on character counts.
+- Graph Representation: Manages connections in graphs using adjacency lists.
+- Set Operations: Performs union, intersection, and membership tests efficiently.
