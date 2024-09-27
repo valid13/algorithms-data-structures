@@ -5,11 +5,11 @@
 # Algorithm
 
 - Additional memory: using a temp array to write result
-  - _Time O(n) Memory O(n)_
+  - _Time O(n) Space O(n)_
 - Jungling algo
-  - _Time O(n) Memory O(1)_
+  - _Time O(n) Space O(1)_
 - Reversal algorithm
-  - _Time O(n) Memory O(1)_
+  - _Time O(n) Space O(1)_
 
 # Solution
 

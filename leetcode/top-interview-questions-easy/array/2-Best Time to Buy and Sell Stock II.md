@@ -5,7 +5,7 @@
 # Algorithm
 
 - Greedy algorithm
-  - _Time O(n) and Memory O(1)_
+  - _Time O(n) and Space O(1)_
 
 # Solution
 

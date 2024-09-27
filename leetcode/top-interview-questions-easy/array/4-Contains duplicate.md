@@ -4,12 +4,12 @@
 
 # Algorithm
 
-- HashSet-Based search algorithm
-  - _Time O(n) Memory O(n)_
+- Hash-Based search algorithm
+  - _Time O(n) Space O(n)_
 - Sorting-Based search algorithm
-  - _Time O(n log n) Memory O(1)_
+  - _Time O(n log n) Space O(1)_
 - Brute-force search algorithm
-  - _Time O(n^2) Memory O(1)_
+  - _Time O(n^2) Space O(1)_
 
 # Solution
 

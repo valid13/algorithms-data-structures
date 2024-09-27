@@ -5,7 +5,7 @@
 # Algorithm
 
 - XOR-based Algorithm
-  - _Time O(n) Memory O(1)_
+  - _Time O(n) Space O(1)_
 
 # Solution
 
