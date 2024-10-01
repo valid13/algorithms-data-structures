@@ -8,12 +8,15 @@
 
 # Algorithm
 
+n largest size
+m smallest size
+
 - Hash-Based search algorithm (basic solution)
   - _Time O(n + m) Space O(n + m)_
 - Sorting-Based search algorithm and Two pointers technique (answer 1)
   - _Time O(n log n + m log m) Space O(n + m)_
-- Binary search algorithm and Two pointers technique (answer 2)
-  - _Time O() Space O()_
+- Binary search algorithm (answer 2)
+  - _Time O(n log n + m log n) Space O(n + min(n, m)) = n_
 
 # Solution
 
@@ -98,3 +101,58 @@ class Solution {
 ```
 
 ## Binary search algorithm
+
+```java
+class Solution {
+    public int[] intersect(int[] nums1, int[] nums2) {
+        int[] smallestNums = nums1;
+        int[] largestNums = nums2;
+        if ( nums1.length > nums2.length ) {
+            smallestNums = nums1;
+            largestNums = nums2;
+        }
+        Arrays.sort(largestNums);
+        ArrayList<Integer> resultList = new ArrayList();
+        HashMap<Integer, Integer> occMap = new HashMap();
+        for (int i = 0; i < largestNums.length; i++) {
+            int num = largestNums[i];
+            if (!occMap.containsKey(num)) {
+                occMap.put(num, 1);
+            } else {
+                occMap.put(num, occMap.get(num) + 1);
+            }
+        }
+        for (int i = 0; i < smallestNums.length; i++) {
+            int num = smallestNums[i];
+            boolean exist = binarySearch(largestNums, num, 0, largestNums.length - 1);
+            if (exist && occMap.get(num) > 0) {
+                resultList.add(num);
+                occMap.put(num, occMap.get(num) - 1);
+            }
+        }
+        int[] result = new int[resultList.size()];
+        for (int t = 0; t < result.length; t++) {
+            result[t] = resultList.get(t);
+        }
+
+        return result;
+    }
+
+    private boolean binarySearch(int[] nums, int searchedNum, int start, int end) {
+        System.out.println("Start " + start + " End " + end);
+        if (start <= end) {
+            int middleIdx = start + (end - start) / 2;
+            System.out.println(middleIdx);
+            if (searchedNum == nums[middleIdx])  {
+                return true;
+            } else if (searchedNum < nums[middleIdx])  {
+                return binarySearch(nums, searchedNum, start, middleIdx - 1);
+            } else if (searchedNum > nums[middleIdx])  {
+                return binarySearch(nums, searchedNum, middleIdx + 1, end);
+            }
+        }
+
+        return false;
+    }
+}
+```
