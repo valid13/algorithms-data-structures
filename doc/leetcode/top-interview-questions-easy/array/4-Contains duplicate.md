@@ -4,7 +4,7 @@
 
 # Algorithm
 
-- Hash-Based search algorithm
+- Hashmap / Set-Based search algorithm
   - _Time O(n) Space O(n)_
 - Sorting-Based search algorithm
   - _Time O(n log n) Space O(1)_

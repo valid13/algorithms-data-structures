@@ -3,7 +3,10 @@
 [Leetcode link](https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/674/)
 
 1. What if the given array is already sorted? How would you optimize your algorithm?
+   Sorting-Based search algorithm and Two pointers technique is the best choice since we skip the cost of sorting.
+   So time complexity is O(M+N) and the space complexity is O(n).
 2. What if nums1's size is small compared to nums2's size? Which algorithm is better?
+   Binary search algorithm
 3. What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
 
 # Algorithm
@@ -13,9 +16,9 @@ m smallest size
 
 - Hash-Based search algorithm (basic solution)
   - _Time O(n + m) Space O(n + m)_
-- Sorting-Based search algorithm and Two pointers technique (answer 1)
+- Sorting-Based search algorithm and Two pointers technique
   - _Time O(n log n + m log m) Space O(n + m)_
-- Binary search algorithm (answer 2)
+- Binary search algorithm
   - _Time O(n log n + m log n) Space O(n + min(n, m)) = n_
 
 # Solution
@@ -62,7 +65,7 @@ class Solution {
 }
 ```
 
-## Sorting-Based search algorithm
+## Sorting-Based search algorithm and Two pointers technique
 
 ```java
 class Solution {
